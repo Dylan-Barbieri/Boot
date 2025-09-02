@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo a estrutura do Botstrap</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+        <!--grid-->
+    <div class="conteiner border border-dark">
+        <div class="row">
+            <div class="col-xs-1 col-md-7 col-lg-5 border border-dark">1</div>
+            <div class="col-xs-10 col-md-5 col-lg-5 border border-dark">2</div>
+        </div>
+    </div>
+        <!--Tipografia-->
+        
+    <h3>
+         Fancy display heading
+        <small class="text-body-secondary">With faded secondary text</small>
+    </h3>
+
+    <p class="lead">
+        This is a lead paragraph. It stands out from regular paragraphs.
+    </p>
+
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p class="mark col-6">You can use the mark tag to highlight text.</p>
+
+
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+
+    <p class="h1">h1. Bootstrap heading</p>
+    <p class="h2">h2. Bootstrap heading</p>
+    <p class="h3">h3. Bootstrap heading</p>
+    <p class="h4">h4. Bootstrap heading</p>
+    <p class="h5">h5. Bootstrap heading</p>
+    <p class="h6">h6. Bootstrap heading</p>
+
+
+    
+
+
+    <!--Img-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" class="img-fluid rounded mx-auto d-block" alt="Carro">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quia eligendi atque, tempora eveniet obcaecati molestiae et, quae delectus laudantium voluptatibus perspiciatis earum illum repellat voluptate ullam aliquid harum tenetur.</p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" class="rounded float-start" alt="...">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" class="rounded float-end" alt="...">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" class="rounded mx-auto d-block img-thumbnail" alt="...">
+
+    <picture>
+    <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" type="image/svg+xml">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb2zGHXqnC0uIfxTMrvLNxr2DzvXw_3sAug&s" class="img-fluid img-thumbnail float-end" alt="...">
+    </picture>
+    
+    <!--Tabelas-->
+    
+    <table class=" table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">eu</th>
+      <th scope="col">Tu</th>
+      <th scope="col">nós</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td class="table-success">Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="table-warning">
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--Formulário-->
+  <div class="conteiner">
+    <div class="row">
+      <div class="col-12">
+        <form action="#">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Dígite seu email</label>
+            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div id="passwordHelpBlock" class="form-text">Deve ter @ e .COM
+
+          </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Dígite seu email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deixe sua opinião</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Select-->
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <select class="form-select" multiple aria-label="Multiple select example">
+    <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    Default checkbox
+  </label>
+</div>
+  <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+      <label class="form-check-label" for="checkChecked">Checked checkbox
+      </label>
+  </div>
+
+  <!--Cards-->
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Meu sonho</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card">
+  <h5 class="card-header">Demonstração</h5>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">Descrição</p>
+    <a href="#" class="btn btn-primary">Butão</a>
+  </div>
+</div>
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
